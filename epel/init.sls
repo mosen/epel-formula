@@ -14,7 +14,7 @@
     'key_hash': 'md5=eb8749ea67992fd622176442c986b788',
     'rpm': 'http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm',
   } %}
-{% elif grains['osmajorrelease'][0] == '7' %}
+{% elif grains['osmajorrelease'] == '7' %}
   {% set pkg = {
     'key': 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7',
     'key_hash': 'md5=58fa8ae27c89f37b08429f04fd4a88cc',
